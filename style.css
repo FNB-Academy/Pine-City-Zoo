@@ -47,6 +47,14 @@ body {
     padding-top: 12px;
 }
 
+#tabs-top a:hover {
+  background: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  height: 28px;
+}
+/* ...existing code... */
+
 /*=========== MAIN-HOME ===========*/
 #main-home {
     margin-top: 120px;
@@ -75,6 +83,12 @@ body {
     padding-top: 12px;
 }
 
+#tabs-bottom a:hover {
+  background: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+}
+
 /*=========== MAIN ===========*/
 
 #main {
@@ -99,12 +113,14 @@ a.info-box {
     margin:  auto;
     margin-top: 12px;
     padding: 1px;
+    border-radius: 50px;
 }
 
 .info-box img {
     height: 70px;
     margin: 10px;
     float: left;
+    border-radius: 50px;
 }
 .info-box h3 {
      padding: 0;
@@ -133,11 +149,50 @@ a.info-box {
     margin: auto;
     margin-top: 12px;
     padding: 10px;
+    border-radius: 50px;
 }
 
 #info-box-full img {
     width: 100%;
+    border-radius: 50px;
 }
 #info-box-full h3 {
     text-align: center;
+}
+#info-box-full p {
+    color: #131313;
+    margin: 16px auto 0 auto;
+    padding: 12px 18px;
+    font-size: 17px;
+    line-height: 1.6;
+    width: 85%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-weight: 500;
+}
+
+a.info-box {
+    text-decoration: none;
+    background: rgba(255, 255, 255, .8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin:  auto;
+    margin-top: 12px;
+    padding: 1px;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 
+        transform 0.3s cubic-bezier(.4,2,.6,1),
+        box-shadow 0.3s cubic-bezier(.4,2,.6,1),
+        background 0.3s;
+}
+
+a.info-box:hover {
+    transform: scale(1.08); /* Scales card forward, not up */
+    box-shadow: 0 8px 32px rgba(34,139,34,0.22), 0 1.5px 8px rgba(0,0,0,0.10);
+    background: rgba(255, 255, 255, 0.97);
+    z-index: 10;
 }
